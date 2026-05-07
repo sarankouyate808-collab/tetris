@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu des Nombres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Écran d'accueil -->
+    <div id="start-screen" class="screen">
+        <h1>🎮 Jeu des Nombres</h1>
+        <button id="start-btn">Lancer le jeu</button>
+    </div>
+
+    <!-- Écran du jeu -->
+    <div id="game-screen" class="hidden">
+        <div class="top-bar">
+            <div class="score">Score : <span id="score">0</span></div>
+            <div class="timer">Temps : <span id="time">60</span>s</div>
+        </div>
+
+        <div class="number-box">
+            <span id="random-number">0</span>
+        </div>
+
+        <div class="keypad" id="keypad">
+            <!-- Les boutons seront générés en JS -->
+        </div>
+    </div>
+
+    <!-- Fin du jeu -->
+    <div id="end-screen" class="hidden">
+        <h1>⏰ Fin du jeu</h1>
+        <p>Score final : <span id="final-score">0</span></p>
+        <button onclick="location.reload()">Rejouer</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
